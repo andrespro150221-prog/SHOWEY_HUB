@@ -1,0 +1,9 @@
+export default defineConfig({
+  base: "/showey_hub/",          // 👈 AGREGA ESTA LÍNEA (usa el nombre de TU repo)
+  plugins: [react(), tailwindcss(), viteSingleFile()],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "src"),
+    },
+  },
+});
